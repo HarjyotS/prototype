@@ -1,0 +1,314 @@
+{
+  "metadata": {
+    "generatedAt": "2026-02-12T20:01:34.556Z",
+    "sessionId": "session-001-good",
+    "title": "Medication Counseling — Good Communication",
+    "duration": 180,
+    "apiVersion": "1.0.0"
+  },
+  "executiveSummary": {
+    "overallPerformance": "good",
+    "averageScore": 84,
+    "strengths": [
+      {
+        "area": "Communication Quality",
+        "score": 87,
+        "grade": "Excellent"
+      },
+      {
+        "area": "Explanation Clarity",
+        "score": 92,
+        "grade": "Excellent"
+      },
+      {
+        "area": "Patient Engagement",
+        "score": 78,
+        "grade": "Good"
+      },
+      {
+        "area": "Body Language",
+        "score": 83,
+        "grade": "Good"
+      },
+      {
+        "area": "Adherence Support",
+        "score": 81,
+        "grade": "Good"
+      }
+    ],
+    "areasForImprovement": [],
+    "keyInsights": []
+  },
+  "scores": {
+    "communication_quality": {
+      "value": 87,
+      "grade": "Excellent",
+      "drivers": [
+        "72% eye contact",
+        "8 of 10 open questions",
+        "1 interruption"
+      ]
+    },
+    "explanation_clarity": {
+      "value": 92,
+      "grade": "Excellent",
+      "drivers": [
+        "Jargon-free 95%",
+        "3 teach-back prompts",
+        "Plain language chunks"
+      ]
+    },
+    "patient_engagement": {
+      "value": 78,
+      "grade": "Good",
+      "drivers": [
+        "42% patient speaking time",
+        "1.2s avg response latency",
+        "Active back-channel"
+      ]
+    },
+    "body_language": {
+      "value": 83,
+      "grade": "Good",
+      "drivers": [
+        "78% open posture",
+        "62% forward lean",
+        "24 nodding instances"
+      ]
+    },
+    "adherence_support": {
+      "value": 81,
+      "grade": "Good",
+      "drivers": [
+        "Barrier probing present",
+        "Follow-up clarity confirmed",
+        "Understanding validated"
+      ]
+    }
+  },
+  "detailedAnalysis": {
+    "communication": {
+      "verbalPatterns": {
+        "questionQuality": 0.8,
+        "interruptions": 1,
+        "empathyMarkers": 5,
+        "languageClarity": true
+      },
+      "speakingBalance": {
+        "clinicianPercentage": 58,
+        "patientPercentage": 42,
+        "responseLatency": 1.2
+      }
+    },
+    "nonverbalBehavior": {
+      "eyeContact": 72,
+      "posture": {
+        "openPosture": 78,
+        "forwardLean": 62,
+        "armsCrossed": 3
+      },
+      "engagement": {
+        "nodding": 24,
+        "gestures": 18,
+        "mirroring": 6,
+        "proximity": 85
+      }
+    }
+  },
+  "transcript": [
+    {
+      "time": "00:02",
+      "speaker": "Clinician",
+      "text": "Good morning! How are you feeling today?",
+      "flags": [
+        "Open question",
+        "Forward lean"
+      ]
+    },
+    {
+      "time": "00:06",
+      "speaker": "Patient",
+      "text": "I'm okay, a little nervous about the new medication.",
+      "flags": []
+    },
+    {
+      "time": "00:12",
+      "speaker": "Clinician",
+      "text": "I completely understand that feeling. A lot of patients feel the same way when starting something new. Let me walk you through everything so you feel comfortable.",
+      "flags": [
+        "Empathy phrase",
+        "Nodding",
+        "Open posture"
+      ]
+    },
+    {
+      "time": "00:24",
+      "speaker": "Patient",
+      "text": "That would be great, thank you.",
+      "flags": []
+    },
+    {
+      "time": "00:27",
+      "speaker": "Clinician",
+      "text": "So your doctor has prescribed lisinopril. It's a common blood pressure medication. Basically, it helps relax your blood vessels so your heart doesn't have to work as hard.",
+      "flags": [
+        "Plain language",
+        "Gesturing (illustrative)"
+      ]
+    },
+    {
+      "time": "00:42",
+      "speaker": "Patient",
+      "text": "Okay, that makes sense.",
+      "flags": []
+    },
+    {
+      "time": "00:44",
+      "speaker": "Clinician",
+      "text": "What questions do you have about that so far?",
+      "flags": [
+        "Open question",
+        "Teach-back",
+        "Leaning forward"
+      ]
+    },
+    {
+      "time": "00:48",
+      "speaker": "Patient",
+      "text": "Will it make me feel different? Like dizzy or anything?",
+      "flags": []
+    },
+    {
+      "time": "00:53",
+      "speaker": "Clinician",
+      "text": "Great question. Some people do feel a bit lightheaded in the first few days, especially when standing up quickly. That usually goes away. If it doesn't, we should talk about it.",
+      "flags": [
+        "Side-effect discussion",
+        "Nodding",
+        "Proximity closer"
+      ]
+    },
+    {
+      "time": "01:08",
+      "speaker": "Patient",
+      "text": "Alright, I'll watch out for that.",
+      "flags": []
+    },
+    {
+      "time": "01:12",
+      "speaker": "Clinician",
+      "text": "Perfect. And one more thing—take it consistently, same time every day. Your morning routine is a good anchor.",
+      "flags": [
+        "Adherence tip",
+        "Gesturing"
+      ]
+    },
+    {
+      "time": "01:22",
+      "speaker": "Patient",
+      "text": "Got it. With breakfast?",
+      "flags": []
+    },
+    {
+      "time": "01:25",
+      "speaker": "Clinician",
+      "text": "Exactly. That's a great habit. Now, what might make it hard for you to remember to take this daily?",
+      "flags": [
+        "Barrier probing",
+        "Open posture",
+        "Mirroring"
+      ]
+    },
+    {
+      "time": "01:35",
+      "speaker": "Patient",
+      "text": "Honestly, I sometimes forget my vitamins.",
+      "flags": []
+    },
+    {
+      "time": "01:40",
+      "speaker": "Clinician",
+      "text": "That's really common. How about setting a phone reminder? Or keeping the bottle next to your coffee maker?",
+      "flags": [
+        "Practical support",
+        "Open question"
+      ]
+    },
+    {
+      "time": "01:48",
+      "speaker": "Patient",
+      "text": "The coffee maker idea is perfect. I never miss that.",
+      "flags": []
+    },
+    {
+      "time": "01:52",
+      "speaker": "Clinician",
+      "text": "Love it. So to summarize: lisinopril once daily with breakfast, watch for dizziness in the first few days, and we'll check in at your follow-up in 4 weeks. Does that all make sense?",
+      "flags": [
+        "Teach-back",
+        "Summary",
+        "Forward lean"
+      ]
+    },
+    {
+      "time": "02:08",
+      "speaker": "Patient",
+      "text": "Yes, I feel much better about it now. Thank you.",
+      "flags": []
+    },
+    {
+      "time": "02:12",
+      "speaker": "Clinician",
+      "text": "You're so welcome. Call us if anything comes up before then, okay?",
+      "flags": [
+        "Support offer",
+        "Open posture"
+      ]
+    },
+    {
+      "time": "02:18",
+      "speaker": "Patient",
+      "text": "Will do. Thanks again!",
+      "flags": []
+    }
+  ],
+  "recommendations": [],
+  "comparisonToBenchmark": {
+    "eye_contact_pct": {
+      "value": 72,
+      "benchmark": 65,
+      "difference": 7,
+      "status": "above"
+    },
+    "open_question_ratio": {
+      "value": 0.8,
+      "benchmark": 0.6,
+      "difference": 0.20000000000000007,
+      "status": "above"
+    },
+    "patient_speaking_pct": {
+      "value": 42,
+      "benchmark": 40,
+      "difference": 2,
+      "status": "above"
+    },
+    "empathy_count": {
+      "value": 5,
+      "benchmark": 4,
+      "difference": 1,
+      "status": "above"
+    },
+    "open_posture_pct": {
+      "value": 78,
+      "benchmark": 70,
+      "difference": 8,
+      "status": "above"
+    },
+    "jargon_unexplained_count": {
+      "value": 0,
+      "benchmark": 0,
+      "difference": 0,
+      "status": "above"
+    }
+  }
+}

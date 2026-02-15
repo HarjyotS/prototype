@@ -1,0 +1,125 @@
+{
+  "id": "session-002-poor",
+  "title": "Medication Counseling — Poor Communication",
+  "duration_seconds": 180,
+  "scenario": "Same scenario, but the clinician demonstrates clinician-centered communication patterns.",
+  "scores": {
+    "communication_quality": {
+      "value": 41,
+      "grade": "Needs Improvement",
+      "drivers": ["23% eye contact", "2 of 13 open questions", "7 interruptions"]
+    },
+    "explanation_clarity": {
+      "value": 35,
+      "grade": "Needs Improvement",
+      "drivers": ["Jargon usage 6 instances", "No teach-back", "Medical terminology unexplained"]
+    },
+    "patient_engagement": {
+      "value": 29,
+      "grade": "Poor",
+      "drivers": ["18% patient speaking time", "0.4s avg response latency", "Minimal back-channel"]
+    },
+    "body_language": {
+      "value": 34,
+      "grade": "Needs Improvement",
+      "drivers": ["31% open posture", "18% forward lean", "4 nodding instances"]
+    },
+    "adherence_support": {
+      "value": 38,
+      "grade": "Needs Improvement",
+      "drivers": ["No barrier probing", "Rushed follow-up mention", "No confirmation check"]
+    }
+  },
+  "radar": {
+    "eye_contact": 23,
+    "question_quality": 15,
+    "speaking_balance": 18,
+    "language_clarity": 35,
+    "empathy": 20,
+    "active_listening": 25,
+    "posture_openness": 31,
+    "physical_engagement": 28
+  },
+  "timeline": {
+    "speaker_segments": [
+      { "start": 0, "end": 3, "speaker": "clinician" },
+      { "start": 3, "end": 6, "speaker": "patient" },
+      { "start": 6, "end": 35, "speaker": "clinician" },
+      { "start": 35, "end": 38, "speaker": "patient" },
+      { "start": 38, "end": 72, "speaker": "clinician" },
+      { "start": 72, "end": 75, "speaker": "patient" },
+      { "start": 75, "end": 98, "speaker": "clinician" },
+      { "start": 98, "end": 102, "speaker": "patient" },
+      { "start": 102, "end": 145, "speaker": "clinician" },
+      { "start": 145, "end": 150, "speaker": "patient" },
+      { "start": 150, "end": 180, "speaker": "clinician" }
+    ],
+    "gaze_segments": [
+      { "start": 0, "end": 3, "target": "patient" },
+      { "start": 3, "end": 8, "target": "screen" },
+      { "start": 8, "end": 15, "target": "screen" },
+      { "start": 15, "end": 45, "target": "screen" },
+      { "start": 45, "end": 52, "target": "patient" },
+      { "start": 52, "end": 98, "target": "screen" },
+      { "start": 98, "end": 105, "target": "other" },
+      { "start": 105, "end": 180, "target": "screen" }
+    ],
+    "body_segments": [
+      { "start": 0, "end": 15, "state": "closed" },
+      { "start": 15, "end": 45, "state": "closed" },
+      { "start": 45, "end": 72, "state": "away" },
+      { "start": 72, "end": 98, "state": "closed" },
+      { "start": 98, "end": 145, "state": "away" },
+      { "start": 145, "end": 180, "state": "closed" }
+    ],
+    "events": [
+      { "time": 2, "type": "Closed question", "label": "Your PCP prescribed lisinopril", "detail": "Statement rather than open question" },
+      { "time": 2, "type": "Arms crossed", "label": "Defensive posture", "detail": "Arms crossed at session start" },
+      { "time": 12, "type": "Jargon usage", "label": "ACE inhibitor mentioned without explanation", "detail": "Medical terminology at 00:12" },
+      { "time": 14, "type": "Interruption", "label": "Clinician interrupted patient question", "detail": "Cut off patient at 00:14" },
+      { "time": 14, "type": "Turned away", "label": "Body oriented toward screen", "detail": "Disengaged posture" },
+      { "time": 23, "type": "Eye contact drop", "label": "Looked away during patient question", "detail": "Lost eye contact during risk discussion at 00:23" },
+      { "time": 25, "type": "Jargon usage", "label": "Hyperkalemia and angioedema used", "detail": "Complex terms without plain language explanation" },
+      { "time": 25, "type": "Closed question", "label": "Do you take potassium supplements?", "detail": "Yes/no question at 00:25" },
+      { "time": 38, "type": "Interruption", "label": "Cut off patient response", "detail": "Patient interrupted at 00:38" },
+      { "time": 38, "type": "Arms crossed", "label": "Defensive posture during question", "detail": "Closed body language at 00:38" },
+      { "time": 50, "type": "Eye contact drop", "label": "Looking at computer", "detail": "Attention on screen during patient speech" },
+      { "time": 50, "type": "Turned away", "label": "Body oriented away from patient", "detail": "Physically disengaged at 00:50" }
+    ]
+  },
+  "transcript": [
+    { "time": "00:02", "speaker": "Clinician", "text": "Alright so you're here for a med consult. Your PCP prescribed lisinopril, an ACE inhibitor for your hypertension.", "flags": ["Jargon: ACE inhibitor, hypertension", "Arms crossed"] },
+    { "time": "00:12", "speaker": "Patient", "text": "Um, what's an ACE—", "flags": [] },
+    { "time": "00:14", "speaker": "Clinician", "text": "It's standard for your condition. Take 10mg once daily in the morning. You might get a cough, that's normal.", "flags": ["Interruption", "No explanation", "Leaning back"] },
+    { "time": "00:23", "speaker": "Patient", "text": "A cough? For how long?", "flags": [] },
+    { "time": "00:25", "speaker": "Clinician", "text": "It varies. Also monitor for hyperkalemia and angioedema, though those are rare. Any renal impairment in your history?", "flags": ["Jargon x3", "Closed question", "Turned to screen"] },
+    { "time": "00:35", "speaker": "Patient", "text": "I... I'm not sure what those mean.", "flags": [] },
+    { "time": "00:38", "speaker": "Clinician", "text": "They're side effects. Just watch for swelling of the face or lips, and come to the ER if that happens. Do you take potassium supplements?", "flags": ["Closed question", "No mirroring"] },
+    { "time": "00:48", "speaker": "Patient", "text": "No, I don't think so.", "flags": [] },
+    { "time": "00:50", "speaker": "Clinician", "text": "Good. Take it consistently, same time every day. Don't miss doses. Your follow-up is in 4 weeks.", "flags": ["No barrier probing", "Leaning away", "Checking clock"] },
+    { "time": "01:02", "speaker": "Patient", "text": "Okay, but—", "flags": [] },
+    { "time": "01:03", "speaker": "Clinician", "text": "Any questions?", "flags": ["Rushed", "Interruption"] },
+    { "time": "01:05", "speaker": "Patient", "text": "Well, I'm confused about when exactly—", "flags": [] },
+    { "time": "01:08", "speaker": "Clinician", "text": "Morning is fine. Just pick a time. The pharmacy handout has all the details. Anything else?", "flags": ["Dismissive", "No teach-back"] },
+    { "time": "01:15", "speaker": "Patient", "text": "I guess not...", "flags": [] },
+    { "time": "01:18", "speaker": "Clinician", "text": "Great. The front desk will schedule your follow-up. Have a good day.", "flags": ["Abrupt ending", "Turned away"] }
+  ],
+  "metrics": {
+    "eye_contact_pct": 23,
+    "open_question_ratio": 0.15,
+    "interruption_count": 7,
+    "empathy_count": 0,
+    "patient_speaking_pct": 18,
+    "avg_response_latency": 0.4,
+    "teachback_count": 0,
+    "jargon_unexplained_count": 6,
+    "open_posture_pct": 31,
+    "forward_lean_pct": 18,
+    "arms_crossed_pct": 34,
+    "nod_count": 4,
+    "gesture_count": 3,
+    "mirroring_instances": 0,
+    "avg_proximity_cm": 140,
+    "proximity_shifts": 0
+  }
+}

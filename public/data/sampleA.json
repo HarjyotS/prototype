@@ -1,0 +1,127 @@
+{
+  "id": "session-001-good",
+  "title": "Medication Counseling — Good Communication",
+  "duration_seconds": 180,
+  "scenario": "A clinician counsels a patient on a new blood pressure medication. The clinician demonstrates patient-centered communication.",
+  "scores": {
+    "communication_quality": {
+      "value": 87,
+      "grade": "Excellent",
+      "drivers": ["72% eye contact", "8 of 10 open questions", "1 interruption"]
+    },
+    "explanation_clarity": {
+      "value": 92,
+      "grade": "Excellent",
+      "drivers": ["Jargon-free 95%", "3 teach-back prompts", "Plain language chunks"]
+    },
+    "patient_engagement": {
+      "value": 78,
+      "grade": "Good",
+      "drivers": ["42% patient speaking time", "1.2s avg response latency", "Active back-channel"]
+    },
+    "body_language": {
+      "value": 83,
+      "grade": "Good",
+      "drivers": ["78% open posture", "62% forward lean", "24 nodding instances"]
+    },
+    "adherence_support": {
+      "value": 81,
+      "grade": "Good",
+      "drivers": ["Barrier probing present", "Follow-up clarity confirmed", "Understanding validated"]
+    }
+  },
+  "radar": {
+    "eye_contact": 72,
+    "question_quality": 80,
+    "speaking_balance": 58,
+    "language_clarity": 95,
+    "empathy": 83,
+    "active_listening": 88,
+    "posture_openness": 78,
+    "physical_engagement": 85
+  },
+  "timeline": {
+    "speaker_segments": [
+      { "start": 0, "end": 8, "speaker": "clinician" },
+      { "start": 8, "end": 12, "speaker": "patient" },
+      { "start": 12, "end": 42, "speaker": "clinician" },
+      { "start": 42, "end": 46, "speaker": "patient" },
+      { "start": 46, "end": 54, "speaker": "clinician" },
+      { "start": 54, "end": 62, "speaker": "patient" },
+      { "start": 62, "end": 95, "speaker": "clinician" },
+      { "start": 95, "end": 102, "speaker": "patient" },
+      { "start": 102, "end": 135, "speaker": "clinician" },
+      { "start": 135, "end": 145, "speaker": "patient" },
+      { "start": 145, "end": 180, "speaker": "clinician" }
+    ],
+    "gaze_segments": [
+      { "start": 0, "end": 8, "target": "patient" },
+      { "start": 8, "end": 12, "target": "patient" },
+      { "start": 12, "end": 28, "target": "patient" },
+      { "start": 28, "end": 32, "target": "screen" },
+      { "start": 32, "end": 95, "target": "patient" },
+      { "start": 95, "end": 98, "target": "screen" },
+      { "start": 98, "end": 180, "target": "patient" }
+    ],
+    "body_segments": [
+      { "start": 0, "end": 8, "state": "open" },
+      { "start": 8, "end": 42, "state": "open" },
+      { "start": 42, "end": 54, "state": "open" },
+      { "start": 54, "end": 95, "state": "open" },
+      { "start": 95, "end": 120, "state": "neutral" },
+      { "start": 120, "end": 180, "state": "open" }
+    ],
+    "events": [
+      { "time": 2, "type": "Open question", "label": "How are you feeling today?", "detail": "Open-ended question to establish rapport" },
+      { "time": 12, "type": "Empathy phrase", "label": "I completely understand that feeling", "detail": "Validation of patient concern" },
+      { "time": 14, "type": "Forward lean", "label": "Clinician leaned toward patient", "detail": "Non-verbal engagement cue at 00:14" },
+      { "time": 27, "type": "Plain language", "label": "Lisinopril explained without jargon", "detail": "Clear explanation of medication" },
+      { "time": 44, "type": "Teach-back prompt", "label": "What questions do you have?", "detail": "Invitation for patient questions" },
+      { "time": 44, "type": "Forward lean", "label": "Leaning forward", "detail": "Engaged posture during question" },
+      { "time": 53, "type": "Nodding", "label": "Head nodding during patient response", "detail": "Active listening indicator" },
+      { "time": 72, "type": "Proximity shift", "label": "Moved closer during discussion", "detail": "Physical engagement at empathetic moment" },
+      { "time": 82, "type": "Mirroring", "label": "Postural matching with patient", "detail": "Unconscious rapport building" },
+      { "time": 92, "type": "Barrier probing", "label": "What might make it hard to take this daily?", "detail": "Proactive adherence support" }
+    ]
+  },
+  "transcript": [
+    { "time": "00:02", "speaker": "Clinician", "text": "Good morning! How are you feeling today?", "flags": ["Open question", "Forward lean"] },
+    { "time": "00:06", "speaker": "Patient", "text": "I'm okay, a little nervous about the new medication.", "flags": [] },
+    { "time": "00:12", "speaker": "Clinician", "text": "I completely understand that feeling. A lot of patients feel the same way when starting something new. Let me walk you through everything so you feel comfortable.", "flags": ["Empathy phrase", "Nodding", "Open posture"] },
+    { "time": "00:24", "speaker": "Patient", "text": "That would be great, thank you.", "flags": [] },
+    { "time": "00:27", "speaker": "Clinician", "text": "So your doctor has prescribed lisinopril. It's a common blood pressure medication. Basically, it helps relax your blood vessels so your heart doesn't have to work as hard.", "flags": ["Plain language", "Gesturing (illustrative)"] },
+    { "time": "00:42", "speaker": "Patient", "text": "Okay, that makes sense.", "flags": [] },
+    { "time": "00:44", "speaker": "Clinician", "text": "What questions do you have about that so far?", "flags": ["Open question", "Teach-back", "Leaning forward"] },
+    { "time": "00:48", "speaker": "Patient", "text": "Will it make me feel different? Like dizzy or anything?", "flags": [] },
+    { "time": "00:53", "speaker": "Clinician", "text": "Great question. Some people do feel a bit lightheaded in the first few days, especially when standing up quickly. That usually goes away. If it doesn't, we should talk about it.", "flags": ["Side-effect discussion", "Nodding", "Proximity closer"] },
+    { "time": "01:08", "speaker": "Patient", "text": "Alright, I'll watch out for that.", "flags": [] },
+    { "time": "01:12", "speaker": "Clinician", "text": "Perfect. And one more thing—take it consistently, same time every day. Your morning routine is a good anchor.", "flags": ["Adherence tip", "Gesturing"] },
+    { "time": "01:22", "speaker": "Patient", "text": "Got it. With breakfast?", "flags": [] },
+    { "time": "01:25", "speaker": "Clinician", "text": "Exactly. That's a great habit. Now, what might make it hard for you to remember to take this daily?", "flags": ["Barrier probing", "Open posture", "Mirroring"] },
+    { "time": "01:35", "speaker": "Patient", "text": "Honestly, I sometimes forget my vitamins.", "flags": [] },
+    { "time": "01:40", "speaker": "Clinician", "text": "That's really common. How about setting a phone reminder? Or keeping the bottle next to your coffee maker?", "flags": ["Practical support", "Open question"] },
+    { "time": "01:48", "speaker": "Patient", "text": "The coffee maker idea is perfect. I never miss that.", "flags": [] },
+    { "time": "01:52", "speaker": "Clinician", "text": "Love it. So to summarize: lisinopril once daily with breakfast, watch for dizziness in the first few days, and we'll check in at your follow-up in 4 weeks. Does that all make sense?", "flags": ["Teach-back", "Summary", "Forward lean"] },
+    { "time": "02:08", "speaker": "Patient", "text": "Yes, I feel much better about it now. Thank you.", "flags": [] },
+    { "time": "02:12", "speaker": "Clinician", "text": "You're so welcome. Call us if anything comes up before then, okay?", "flags": ["Support offer", "Open posture"] },
+    { "time": "02:18", "speaker": "Patient", "text": "Will do. Thanks again!", "flags": [] }
+  ],
+  "metrics": {
+    "eye_contact_pct": 72,
+    "open_question_ratio": 0.8,
+    "interruption_count": 1,
+    "empathy_count": 5,
+    "patient_speaking_pct": 42,
+    "avg_response_latency": 1.2,
+    "teachback_count": 3,
+    "jargon_unexplained_count": 0,
+    "open_posture_pct": 78,
+    "forward_lean_pct": 62,
+    "arms_crossed_pct": 3,
+    "nod_count": 24,
+    "gesture_count": 18,
+    "mirroring_instances": 6,
+    "avg_proximity_cm": 85,
+    "proximity_shifts": 4
+  }
+}

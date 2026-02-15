@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-slate/20;
+  }
+
+  body {
+    @apply bg-deep-navy text-white;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate rounded-xl border border-slate/40 p-6 transition-all duration-300 ease-in-out;
+  }
+
+  .card-hover {
+    @apply hover:border-clinical-teal/50 hover:shadow-lg hover:shadow-clinical-teal/10;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 ease-in-out;
+  }
+
+  .btn-primary {
+    @apply bg-clinical-teal hover:bg-clinical-teal/90 text-white shadow-lg shadow-clinical-teal/20;
+  }
+
+  .btn-secondary {
+    @apply bg-insight-blue hover:bg-insight-blue/90 text-white;
+  }
+
+  .btn-danger {
+    @apply bg-alert-red hover:bg-alert-red/90 text-white;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-deep-navy border border-slate/40 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-clinical-teal transition-colors;
+  }
+
+  .score-card {
+    @apply relative overflow-hidden;
+  }
+
+  .score-excellent {
+    @apply bg-clinical-teal/10 border-clinical-teal;
+  }
+
+  .score-good {
+    @apply bg-clinical-teal/5 border-clinical-teal/60;
+  }
+
+  .score-medium {
+    @apply bg-warm-amber/10 border-warm-amber;
+  }
+
+  .score-poor {
+    @apply bg-alert-red/10 border-alert-red;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-clinical-teal to-insight-blue bg-clip-text text-transparent;
+  }
+
+  .animate-count-up {
+    animation: countUp 1.5s ease-out forwards;
+  }
+
+  @keyframes countUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #1E293B #0F172A;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #0F172A;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #1E293B;
+    border-radius: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+}
